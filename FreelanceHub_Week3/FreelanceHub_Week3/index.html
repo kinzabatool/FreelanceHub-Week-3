@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreelanceHub — Find Top Freelancers</title>
+  <link rel="stylesheet" href="freelance.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVIGATION BAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">FreelanceHub<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="freelancers.html">Find Freelancers</a>
+        <a href="#">Find Jobs</a>
+        <a href="about.html">About</a>
+        <a href="profile.html">My Profile</a>
+        <a href="my-services.html">My Services</a>
+        <div class="auth-buttons">
+          <a href="#" class="btn btn-ghost">Login</a>
+          <a href="#" class="btn btn-primary">Register</a>
+        </div>
+      </nav>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Find the perfect <span>freelance services</span> for your business</h1>
+        <p>Work with talented people at the most affordable price to get the most out of your time and cost.</p>
+        
+        <!-- SEARCH BAR -->
+        <form class="search-bar" id="searchForm">
+          <input type="text" id="searchInput" placeholder="Search for services... (e.g. Web Development)">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <div class="popular-searches">
+          <span>Popular:</span>
+          <button data-search="Web Development">Web Development</button>
+          <button data-search="Graphic Design">Graphic Design</button>
+          <button data-search="Data Analysis">Data Analysis</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR CATEGORIES -->
+    <section class="section container">
+      <div class="section-heading">
+        <h2>Explore Popular Categories</h2>
+        <a href="freelancers.html" class="text-link">View all services →</a>
+      </div>
+      <div class="category-grid">
+        <a href="freelancers.html?category=Web%20Development" class="category-card">
+          <span class="cat-icon">💻</span>
+          <h3>Web Development</h3>
+          <p>1,240+ freelancers</p>
+        </a>
+        <a href="freelancers.html?category=Graphic%20Design" class="category-card">
+          <span class="cat-icon">🎨</span>
+          <h3>Graphic Design</h3>
+          <p>980+ freelancers</p>
+        </a>
+        <a href="freelancers.html?category=Mobile%20App" class="category-card">
+          <span class="cat-icon">📱</span>
+          <h3>Mobile App Development</h3>
+          <p>760+ freelancers</p>
+        </a>
+        <a href="freelancers.html?category=Data%20Analysis" class="category-card">
+          <span class="cat-icon">📊</span>
+          <h3>Data Analysis</h3>
+          <p>540+ freelancers</p>
+        </a>
+        <a href="freelancers.html?category=Digital%20Marketing" class="category-card">
+          <span class="cat-icon">📢</span>
+          <h3>Digital Marketing</h3>
+          <p>870+ freelancers</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section how-it-works">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Post a Job</h3>
+            <p>Tell us what you need done and get free quotes.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Choose a Freelancer</h3>
+            <p>Compare profiles and pick the best fit for your project.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Pay Safely</h3>
+            <p>Only release payment when you are 100% satisfied.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREELANCER PREVIEW CARDS -->
+    <section class="section container">
+      <div class="section-heading">
+        <h2>Featured Freelancers</h2>
+        <a href="freelancers.html" class="text-link">See more talent →</a>
+      </div>
+      <div class="freelancer-grid">
+        <!-- Card 1 -->
+        <div class="freelancer-card">
+          <div class="card-header">
+            <div class="avatar">JD</div>
+            <div>
+              <h3>John Doe</h3>
+              <p>Full Stack Developer</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="rating">⭐ 4.9 (120 reviews)</p>
+            <p class="price">Starting at <strong>$40/hr</strong></p>
+          </div>
+          <a href="freelancers.html" class="btn btn-outline">View Profile</a>
+        </div>
+        <!-- Card 2 -->
+        <div class="freelancer-card">
+          <div class="card-header">
+            <div class="avatar" style="background: #e8f5e9; color: #2e7d32;">SM</div>
+            <div>
+              <h3>Sarah Miller</h3>
+              <p>Graphic Designer</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="rating">⭐ 5.0 (85 reviews)</p>
+            <p class="price">Starting at <strong>$32/hr</strong></p>
+          </div>
+          <a href="freelancers.html" class="btn btn-outline">View Profile</a>
+        </div>
+        <!-- Card 3 -->
+        <div class="freelancer-card">
+          <div class="card-header">
+            <div class="avatar" style="background: #e3f2fd; color: #1565c0;">MK</div>
+            <div>
+              <h3>Mike Kim</h3>
+              <p>Data Analyst</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="rating">⭐ 4.8 (200 reviews)</p>
+            <p class="price">Starting at <strong>$38/hr</strong></p>
+          </div>
+          <a href="freelancers.html" class="btn btn-outline">View Profile</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">FreelanceHub<span>.</span></a>
+        <p>Good people. Great work. Better possibilities.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Discover</h4>
+        <a href="freelancers.html">Find Freelancers</a>
+        <a href="#">Find Jobs</a>
+        <a href="about.html">About Us</a>
+      </div>
+      <div class="footer-social">
+        <h4>Share</h4>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">LinkedIn</a>
+        <a href="#" class="social-link">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 FreelanceHub Marketplace. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="freelance.js"></script>
+</body>
+</html>

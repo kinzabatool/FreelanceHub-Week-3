@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Edit Profile | FreelanceHub</title><link rel="stylesheet" href="freelance.css"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;800&display=swap" rel="stylesheet"></head><body>
+<header class="navbar"><div class="container nav-container">
+<a href="index.html" class="logo">FreelanceHub<span>.</span></a>
+<nav class="nav-links" id="navLinks">
+<a href="index.html">Home</a><a href="freelancers.html">Find Freelancers</a>
+<a href="profile.html">My Profile</a><a href="my-services.html">My Services</a>
+<a href="create-service.html" class="btn btn-primary">Create a Service</a>
+</nav><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+</div></header>
+<main class="page-wrap">
+<div class="page-heading"><div><p class="eyebrow">Personal details</p><h1>Edit your profile</h1><p class="muted">Keep your information accurate and up to date.</p></div><a class="btn btn-outline" href="profile.html">← Back to profile</a></div>
+<form class="panel" id="profileForm" novalidate><div id="profileFormMessage"></div><div class="form-grid">
+<div class="field"><label for="fullName">Full name *</label><input id="fullName" name="fullName" required maxlength="60" placeholder="e.g. Ayesha Khan"></div>
+<div class="field"><label for="professionalTitle">Professional title *</label><input id="professionalTitle" name="professionalTitle" required maxlength="80" placeholder="e.g. UI/UX Designer"></div>
+<div class="field"><label for="location">Location</label><input id="location" name="location" placeholder="Karachi, Pakistan"></div>
+<div class="field"><label for="experience">Experience</label><input id="experience" name="experience" placeholder="e.g. 3 years"></div>
+<div class="field full"><label for="bio">About / Bio *</label><textarea id="bio" name="bio" required minlength="20" maxlength="600" placeholder="Tell clients about your experience and strengths..."></textarea><span class="help-text">Write at least 20 characters.</span></div>
+<div class="field full"><label for="skills">Skills *</label><input id="skills" name="skills" required placeholder="Figma, UI Design, Prototyping"><span class="help-text">Separate skills with commas.</span></div>
+</div><div class="form-actions"><button class="btn btn-primary" type="submit">Save Changes</button><a class="btn btn-outline" href="profile.html">Cancel</a></div></form>
+</main>
+<footer class="footer"><div class="container footer-content">
+<div class="footer-brand"><a href="index.html" class="logo">FreelanceHub<span>.</span></a><p>Good people. Great work. Better possibilities.</p></div>
+<div class="footer-links"><h4>Account</h4><a href="profile.html">My Profile</a><a href="edit-profile.html">Edit Profile</a><a href="my-services.html">My Services</a></div>
+<div class="footer-social"><h4>Services</h4><a href="create-service.html">Create a Service</a><a href="freelancer-profile.html">Freelancer Profile</a></div>
+</div><div class="footer-bottom"><p>© 2026 FreelanceHub Marketplace. Week 3 learning project.</p></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="freelance.js"></script>
+</body></html>

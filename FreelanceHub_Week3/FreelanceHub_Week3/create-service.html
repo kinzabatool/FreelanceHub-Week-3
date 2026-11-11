@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Create a Service | FreelanceHub</title><link rel="stylesheet" href="freelance.css"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;800&display=swap" rel="stylesheet"></head><body>
+<header class="navbar"><div class="container nav-container">
+<a href="index.html" class="logo">FreelanceHub<span>.</span></a>
+<nav class="nav-links" id="navLinks">
+<a href="index.html">Home</a><a href="freelancers.html">Find Freelancers</a>
+<a href="profile.html">My Profile</a><a href="my-services.html">My Services</a>
+<a href="create-service.html" class="btn btn-primary">Create a Service</a>
+</nav><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+</div></header>
+<main class="page-wrap">
+<div class="page-heading"><div><p class="eyebrow">Grow your freelance business</p><h1>Create a Service</h1><p class="muted">Describe what you offer so clients know exactly what they will receive.</p></div><a class="btn btn-outline" href="my-services.html">My Services</a></div>
+<form class="panel" id="serviceForm" novalidate><div id="serviceFormMessage"></div><input type="hidden" id="serviceId">
+<div class="form-grid">
+<div class="field full"><label for="serviceTitle">Service title *</label><input id="serviceTitle" required maxlength="100" placeholder="I will design a modern website UI in Figma"></div>
+<div class="field"><label for="serviceCategory">Category *</label><select id="serviceCategory" required><option value="">Select a category</option><option>Web Development</option><option>Graphic Design</option><option>UI/UX Design</option><option>Mobile App Development</option><option>Digital Marketing</option><option>Data Analysis</option><option>Writing & Translation</option></select></div>
+<div class="field"><label for="servicePrice">Starting price (PKR) *</label><input id="servicePrice" type="number" min="500" max="1000000" required placeholder="5000"></div>
+<div class="field"><label for="deliveryTime">Delivery time *</label><select id="deliveryTime" required><option value="">Choose delivery time</option><option>1 day</option><option>2 days</option><option>3 days</option><option>5 days</option><option>7 days</option><option>14 days</option></select></div>
+<div class="field"><label for="serviceImage">Service image / emoji</label><input id="serviceImage" maxlength="80" placeholder="🎨 or paste an image URL"></div>
+<div class="field full"><label for="serviceDescription">Description *</label><textarea id="serviceDescription" required minlength="30" maxlength="1200" placeholder="Explain what is included in your service, your process and what the client will receive..."></textarea><span class="help-text">At least 30 characters. Be clear about what is included.</span></div>
+<div class="field full"><label for="serviceTags">Skills / tags *</label><input id="serviceTags" required placeholder="Figma, UI Design, Mobile App"><span class="help-text">Separate tags with commas.</span></div>
+</div><div class="form-actions"><button class="btn btn-primary" type="submit" id="serviceSubmit">Publish Service</button><a class="btn btn-outline" href="my-services.html">Cancel</a></div></form>
+</main>
+<footer class="footer"><div class="container footer-content">
+<div class="footer-brand"><a href="index.html" class="logo">FreelanceHub<span>.</span></a><p>Good people. Great work. Better possibilities.</p></div>
+<div class="footer-links"><h4>Account</h4><a href="profile.html">My Profile</a><a href="edit-profile.html">Edit Profile</a><a href="my-services.html">My Services</a></div>
+<div class="footer-social"><h4>Services</h4><a href="create-service.html">Create a Service</a><a href="freelancer-profile.html">Freelancer Profile</a></div>
+</div><div class="footer-bottom"><p>© 2026 FreelanceHub Marketplace. Week 3 learning project.</p></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="freelance.js"></script>
+</body></html>
